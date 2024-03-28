@@ -1,0 +1,215 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(230, 107, 0);
+}
+.container {
+    margin: 0px 5px;
+    padding: 0 20px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(205, 205, 205, 0.769);
+    top: 0;
+    position: sticky;
+    z-index: 15;
+}
+.logo{
+    max-width: 5rem;
+    text-align: center;
+    padding: 5px 10px;
+}
+.parts{
+    max-width: 40rem;
+    font-size: 1rem;
+    padding: 0px 20px;
+}
+.parts a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(91, 0, 123);
+}
+.full-product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.preface img{
+    max-width: 30rem;
+}
+.preface img{
+    filter: drop-shadow(10px 0px 5px #00000069);
+}
+.mtxt{
+    color: white;
+    font-size: 6rem;
+    margin: 10px;
+    font-weight: bold;
+    filter: drop-shadow(3px 2px 1px #000);
+}
+.stxt{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.atxt{
+    font-size: 30px;
+    margin: 30px 0px 10px 0px;
+}
+.packets span{
+    font-size: 2rem;
+    margin: 0px 5px;
+    padding: 0px 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.packets span:hover{
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+
+.related p{
+    font-size: 2.5rem;
+    margin: 20px;
+    color: white;
+}
+.rp{
+    display: flex;
+    justify-content: space-around;
+}
+.rp a{
+    text-decoration: none;
+}
+.products{
+    box-shadow: 0px 0px 15px rgba(38, 38, 38, 0.646);
+    margin: 0px 0px;
+    border-radius: 10px;
+}
+.products img{
+    max-width: 17rem;
+    margin: 5px;
+    padding: 0;
+    filter: drop-shadow(10px 5px 5px #00000071);
+}
+.products p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0px 0px 15px 0px;
+    font-size: 2rem;
+}
+
+
+
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container.open .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.container.open .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.container.open .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .parts {
+        display: none;
+    }
+    .parts a{
+    font-size: 12px;
+    }
+    .navbar{
+        position: relative;
+        background: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container.open .parts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .full-product{
+        flex-direction: column;
+    }    
+    .preface img{
+        max-width: 14rem;
+    }
+    .mtxt{
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .stxt{
+        font: 0.8em sans-serif;
+    }
+    .atxt{
+        font-size: 12px;
+        margin: 20px 0px 10px 0px;
+    }
+    .packets{
+        margin: 0;
+    }
+    .packets span{
+        font-size: 0.9rem;
+        padding: 2px 10px;
+        border-radius: 0.2px;
+    }
+    .packets span:hover{
+        color: white;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 1px;
+    }
+    .related p{
+        font-size: 1rem;
+        margin: 2px;
+    }
+    .rp{
+        justify-content: center;
+        margin: 3px;
+    }
+    .products{
+        margin: 2px;
+        border-radius: 5px;
+    }
+    .products img{
+        max-width: 4rem;
+    }
+    .products p{
+        font-size: 0.5rem;
+    }
+}
