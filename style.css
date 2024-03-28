@@ -13,6 +13,19 @@ body{
     padding: 0 20px;
     text-align: center;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow effect */
+}
 .navbar{
     display: flex;
     justify-content: space-between;
